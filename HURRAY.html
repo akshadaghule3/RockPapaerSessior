@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HURRAY!!</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/Images/favicon.png">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+<body class="HURRAY">
+    
+    <div class="container">
+        <audio src="./Assets/Images/won.mp3" id="my_audio"  autoplay="autoplay"></audio>
+        <div class="hurray-image">
+            <img src="./Assets/Images/CUP.png" alt="">
+        </div>
+        <div class="hurray-message">
+            <h1 id="hurray-message">HURRAY!!</h1>
+            <h5 id="payResult">YOU WON THE GAME</h5>
+            <a href="./index.html">PLAY AGAIN</a>
+        </div>
+    </div>
+    
+    <div class="rules-popup">
+        
+        <button onclick="showRules()">RULES</button>
+        <button class="next-button" id="next-button">NEXT</button>
+    </div>
+    <div class="rules-board" id="rules-board">
+        <span onclick="closeRules()">X</span>
+        <h3>Game Rules</h3>
+        <ul type="square">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+    </div>
+    <script src="./Assets/JS/Script.js"></script>
+</body>
+</html>

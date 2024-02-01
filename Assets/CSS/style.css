@@ -1,0 +1,347 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:rgb(118, 196, 0);
+    max-width: 1920px;
+    margin: auto;
+}
+
+/* ===== score section ======= */
+.score-card{
+    height: 33vh;
+    width: 89%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.scrore{
+    width: 70%;
+    height: 23vh;
+    border: 1.5px solid #fff;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score-title{
+    width: 60%;
+    color: #fff;
+    
+}
+.score-section{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.computer-score{
+    width: 45%;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 0px;
+}
+.your-score{
+    width: 50%;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 0px;
+}
+
+/* ===== Game section ======= */
+.main-game{
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game{
+    width: 60%;
+    height: 50vh;
+}
+.game-hide{
+    display: none;
+}
+.top{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.top .icon-one{
+    width: 160px;
+    height: 160px;
+    background-color: green;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 15px solid #0074B6;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top .icon-two{
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    border: 15px solid #BD00FF;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom .icon-three{
+    width: 160px;
+    height: 160px;
+    background-color: green;
+    border-radius: 50%;background-color: #fff;
+    border: 15px solid #FFA943;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.bottom{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.game-result{
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+.game-result-show{
+    display: inherit;
+}
+
+.result-left{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.result-centre{
+    width: 30%;
+    text-align: center;
+    color: #fff;
+}
+.result-centre button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: 0.1s ease;
+    margin-top: 15px;
+    
+}
+.result-centre button:hover{
+    background-color: #89C15E;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.result-right{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.user-choice{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pc-choice{
+    width: 160px;
+    height: 160px;
+    background-color: green;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 15px solid #0074B6;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ===== Rules section ======= */
+.rules-popup{
+    height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+}
+.rules-popup button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s ease;
+    margin-right:15px ;
+}
+.rules-popup button:hover{
+    background-color: #628d42;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.next-button{
+    display: none;
+}
+
+.rules-board{
+    width: 25%;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    border: 6px solid #fff;
+    background-color: #004429;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    display: none;
+}
+.rules-board span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -6%;
+    top: -20px;
+    cursor: pointer;
+    background: #FF0000;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rules-board h3{
+    text-align: center;
+    padding: 10px 0px;
+}
+.rules-board li{
+    padding: 7px 0px;
+}
+.hide-rules{
+    display: none;
+}
+.next-button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s ease;
+    margin-right:15px ;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+/* =========== Media Quries =========== */
+@media screen and (max-width: 600px) {
+    .scrore{
+        width: 100%;
+    }
+    .score-title{
+        width: 40%;
+    }
+    .score-section{
+        width: 60%;
+    }
+    .computer-score{
+        width: 45%;
+    }
+    .your-score{
+        width: 45%;
+    }
+    .rules-board{
+        width: 90%;
+        right: 0px;
+    }
+    .game {
+        width: 100%;
+    }
+    .top{
+        height: 20vh;
+    }
+    .game-result{
+        width: 100%;
+    }
+  }
+  /* ================= HURRAY Page =============== */
+  .HURRAY{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .HURRAY .container{
+        height: 90vh;
+        width: 80%;
+  }
+  .HURRAY .hurray-image{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Images/hurray.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center ;
+  }
+  .hurray-message{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+  }
+  .hurray-message h1{
+    padding: 20px 0px;
+  }
+  .hurray-message a{
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  .hurray-message a:hover{
+    background-color: #628d42;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
